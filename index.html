@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">  -->
+  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/intlTelInput.css">
+  <link rel="stylesheet" href="./css/demo.css">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet"> -->
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="reduslim-form">
+    <img src="./img/reduslim-big.png" alt="reduslim big picture">
+    <div class="reduslim-form__column">
+      <div class="reduslim-form__tagline-section">
+        <div class="reduslim-form__tagline-section-inner">
+          <b>Сделай шаг<br> к выздоровлению</b>
+        </div>
+      </div>
+      <form action="">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name">
+        <label for="phone">Ваш телефон</label>
+        <input id="phone" name="phone" type="tel">
+        <input type="submit" value="Заказать">
+      </form>
+    </div>
+  </div>
+  
+  <!-- Use as a jQuery plugin -->
+  <script src="./js/intlTelInput.js"></script>
+
+  <script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      // allowDropdown: false,
+      // autoHideDialCode: false,
+      // autoPlaceholder: "off",
+      // dropdownContainer: document.body,
+      // excludeCountries: ["us"],
+      // formatOnDisplay: false,
+      // geoIpLookup: function(callback) {
+      //   $.get("http://ipinfo.io", function() {}, "jsonp").always(function(resp) {
+      //     var countryCode = (resp && resp.country) ? resp.country : "";
+      //     callback(countryCode);
+      //   });
+      // },
+      // hiddenInput: "full_number",
+      initialCountry: "ru",
+      // localizedCountries: { 'de': 'Deutschland' },
+      // nationalMode: false,
+      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+      // placeholderNumberType: "MOBILE",
+      // preferredCountries: ['cn', 'jp'],
+      // separateDialCode: true,
+      utilsScript: "./js/utils.js",
+    });
+  </script>
+
+</body>
+</html>
