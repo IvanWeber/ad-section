@@ -4,9 +4,23 @@
     box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: #F4F4F4;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
+
+/* .container {
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+} */
 
 .reduslim-form {
   display: flex;
@@ -20,13 +34,14 @@ body {
 
 img {
   flex-grow: 1;
+  max-width: 560px;
 }
 
 .reduslim-form__column {
-  /* flex-grow: 1;   */
+  flex-grow: 1;  
   display: flex;
   flex-direction: column;
-  min-width: 560px;
+  /* min-width: 560px; */
   background-color: #ffffff;
 }
 
@@ -37,7 +52,7 @@ img {
 }
 
 .reduslim-form__tagline-section-inner {
-  width: 305px;
+  /* width: 305px; */
   margin-top: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -59,8 +74,18 @@ img {
 }
 
 .reduslim-form__column form label {
+  /* align-self: flex-start; */
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
   font-weight: 800;
+  font-size: 12px;
   color: #212121;
+}
+
+.reduslim-form__name {
+  margin-right: 173px;
+}
+
+.reduslim-form__phone {
+  margin-right: 147px;
 }

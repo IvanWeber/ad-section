@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <meta charset="UTF-8">  -->
-  <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-  <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/intlTelInput.css">
   <link rel="stylesheet" href="./css/demo.css">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;0,800;1,600&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Document</title>
 </head>
 <body>
-  <div class="reduslim-form">
-    <img src="./img/reduslim-big.png" alt="reduslim big picture">
-    <div class="reduslim-form__column">
-      <div class="reduslim-form__tagline-section">
-        <div class="reduslim-form__tagline-section-inner">
-          <b>Сделай шаг<br> к выздоровлению</b>
+  <div class="container">
+    <div class="reduslim-form">
+      <img src="./img/reduslim-big.png" alt="reduslim big picture">
+      <div class="reduslim-form__column">
+        <div class="reduslim-form__tagline-section">
+          <div class="reduslim-form__tagline-section-inner">
+            <b>Сделай шаг<br> к выздоровлению</b>
+          </div>
         </div>
+        <form action="">
+          <label class="reduslim-form__name" for="name">Ваше <span style="color: #428A60">имя</span></label>
+          <input type="text" id="name">
+          <label class="reduslim-form__phone" for="phone">Ваш <span style="color: #428A60">телефон</span></label>
+          <input id="phone" name="phone" type="tel">
+          <input type="submit" value="Заказать">
+        </form>
       </div>
-      <form action="">
-        <label for="name">Ваше <span style="color: #428A60">имя</span></label>
-        <input type="text" id="name">
-        <label for="phone">Ваш <span style="color: #428A60">телефон</span></label>
-        <input id="phone" name="phone" type="tel">
-        <input type="submit" value="Заказать">
-      </form>
     </div>
   </div>
   
