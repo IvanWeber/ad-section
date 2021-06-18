@@ -24,11 +24,12 @@
           <label class="reduslim-form__name" for="name">Ваше <span style="color: #428A60">имя</span></label>
           <input type="text" id="name">
           <label class="reduslim-form__phone" for="phone">Ваш <span style="color: #428A60">телефон</span></label>
-          <input id="phone" name="phone" type="tel">
-          <select class="reduslim-form__country-selector">
-            <option>Пункт 1</option>
-            <option>Пункт 2</option>
-          </select>
+          <input class="reduslim-form__phone-input" id="phone" name="phone" type="tel" placeholder="+7 (123) 456 78-90">
+
+          <div class="reduslim-form__country-selector-button"> ru  <img src="./img/country-flags/russia.png" alt="" width="26"></div>
+          <ul class="reduslim-form__country-selector hidden">
+          </ul>
+
           <input type="submit" value="Заказать">
         </form>
       </div>

@@ -15,6 +15,12 @@ body {
   margin: 0;
 }
 
+.hidden {
+  display: none !important;
+
+  width: 0;
+}
+
 /* .container {
   max-width: 1120px;
   margin-left: auto;
@@ -88,4 +94,21 @@ img {
 
 .reduslim-form__phone {
   margin-right: 147px;
+}
+
+.reduslim-form__country-selector {
+  overflow-y: scroll; 
+  /* overflow-x: scroll;  */
+  height:200px;
+  width: 300px;
+  list-style-type: none;
+}
+
+.reduslim-form__country-selector li {
+  cursor: pointer;
+}
+
+.reduslim-form__country-selector-button {
+  text-transform: uppercase;
+  cursor: pointer;
 }
